@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  display: flex;
+  margin: 50px;
+  column-gap: 20px;
+}
+
+html::-webkit-scrollbar {
+            background-color: #000;
+            width: 2px;
+            height: 2px;
+            border-radius: 0px;
+        }
+        
+        html::-webkit-scrollbar-track {
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+        }
+        
+        html::-webkit-scrollbar-thumb {
+            background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.9, #ff0000), color-stop(1, #f6ff00));
+            border-radius: 10px;
+        }
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(255, 238, 0);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+.cursor::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: yellow;
+  opacity: 1;
+  top: 33%;
+  left: 33%;
+  z-index: 2;
+}
+@keyframes cursorAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.expand {
+  animation: cursorAnim 0.5s forwards;
+}

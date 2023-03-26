@@ -76,8 +76,8 @@ export default function About() {
                                 <span className="text-blue-400 ">To deliver high-quality leads, we use telemarketing, email, and internet platforms. To enhance campaign ROI and increase your business, get a broad view of your customers.</span>
                             </p>
                         </div>
-                        <div className="flex lg:ml-[-150%] ml-[-10%]  my-28 lg:my-4 w-screen text-right ">
-                            <img src='/diamond.gif' className="h-[30%] lg:absolute lg:mt-[26%] lg:ml-[20%] lg:h-[10%] " />
+                        <div className="flex lg:ml-[-150%] ml-[-5%]  my-28 lg:my-4 w-screen text-right ">
+                            <img src='/diamond.gif' className=" lg:absolute lg:mt-[26%] lg:ml-[20%] h-[10%] " />
                             <h1 className="lg:ml-[20%]  ">
 
                                 <span className="text-sm text-gray-400">Fast Connects</span>
